@@ -1,0 +1,4 @@
+<!--epilogue.wxml-->
+<view class="pg" bindtap="bindViewTap">
+  <image src="{{img}}" class="pic" background-size="contain"></image>
+</view>

@@ -1,0 +1,114 @@
+/* detail3.wxss */
+.page{
+  position: relative;
+}
+.cpt{
+  text-align: center;
+  font-weight:500;
+  margin: 40rpx 0;
+  font-size: 150%;
+}
+.cptpage{
+  margin-left:550rpx;
+  font-size: 60%;
+}
+
+.talk{
+  padding: 10rpx;
+  overflow: scroll;
+  border-bottom: 1px solid #e5e5e5;
+  height: 100%;
+  box-sizing: border-box;
+  background: #e8e8e8;
+}
+
+.talk-box{
+  position: relative;
+  overflow: hidden;
+  padding: 10rpx;
+  font-size: 36rpx;
+}
+/*拓展下面部分，让其可以下拉*/
+.talk-box-extend{
+  height: 50rpx;
+}
+/*机器人聊天*/
+.head{
+  width: 75rpx;
+  height: 75rpx;
+  box-sizing: border-box;
+  border: 0 solid #ff0000;
+  border-radius: 150rpx;
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 0;
+  margin: 5rpx;
+}
+.head-bot{
+  left: 0;
+}
+.head-user{
+  right: 0;
+  visibility:hidden;
+}
+.name{
+  height:40rpx;
+  width:80rpx;
+  margin-top: 75rpx;
+  margin-left: -10rpx;
+  text-align: center;
+  font-size:48%;
+  left:-15rpx;
+}
+.name-user{
+  right: 0;
+  visibility:hidden;
+}
+/*对话框*/
+.sentence{
+  display:inline-block;
+  margin: 0 90rpx;
+  top: -110rpx;
+  border-radius: 10rpx;
+  border: 1px solid #e3e3e3;
+  padding: 10rpx;
+}
+.sentence view{
+  position: absolute;
+  width: 10rpx;
+  height: 10rpx;
+  border: 0;
+  border-top: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-radius: 0;
+}
+/*机器人的对话框*/
+.sentence-bot{
+  background: #fff;
+  float: left;
+  position: relative;
+  font-size: 80%;
+  line-height:150%;
+}
+.sentence-bot view{
+  background: #fff;
+  top: 15rpx;
+  left: -6rpx;
+  transform: rotate(-135deg);
+}
+/*用户对话框*/
+.sentence-user{
+  background: #e8e8e8;
+  position: relative;
+  border-style: hidden;
+  font-size: 70%;
+  text-align: left;
+}
+.instruction{
+  display:flex;
+  background: #e8e8e8;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+}

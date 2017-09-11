@@ -1,0 +1,24 @@
+/* chapters.wxss */
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx;
+}
+navigator{
+  overflow: hidden;
+}
+
+.list{
+  position:relative;
+}
+
+.in-img{
+  float:none;
+  margin:none;
+}
+.in-img image{
+  display:block;
+  height: 700rpx;
+  width: 700rpx;
+}

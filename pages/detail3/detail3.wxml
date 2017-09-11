@@ -1,0 +1,23 @@
+<!--detail3.wxml-->
+<view class="page">
+    <!--聊天框-->
+    <scroll-view class="talk" scroll-y="true" scroll-top="{{scrollTop}}" scroll-with-animation="true">
+        <!--可滚动区域-->
+        <view class="cpt">{{chapter}}</view>
+        <view style="color:darkgrey" class="cptpage">{{page}}</view>
+        <!--一个话框-->
+        <view class="talk-box" wx:for="{{talk}}" wx:key="idx">
+            <image class="head {{item.isBot? 'head-bot':'head-user'}}"
+                   src="{{item.img}}" background-size="cover"></image>
+            <view class="name {{item.isBot? 'name-bot':'name-user'}}">{{item.name}}</view>
+            <view class="sentence {{item.isBot? 'sentence-bot':'sentence-user'}}">
+                <text>{{item.sentence}}</text>
+                <view></view>
+            </view>
+        </view>
+        <view class="talk-box-extend"></view>
+    </scroll-view>
+    <view bindtap="bindViewTap" class="instruction">
+        <view style="color:darkgrey">Next Page</view> 
+    </view>
+</view>

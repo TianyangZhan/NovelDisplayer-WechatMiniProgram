@@ -1,0 +1,16 @@
+<!--chapters.wxml-->
+<view class="container">
+  <!--Chapter List Template Begins-->
+  <template name="lists">
+    <navigator url="{{url}}?id={{id}}" hover-class="navigator-hover">
+      <view class="in-img"><image src="{{img}}" background-size="cover" model="scaleToFill"></image></view>
+    </navigator>
+  </template>
+  <!--Chapter List Template Ends-->
+
+  <!--For Loop List Template Begins-->
+    <block wx:for="{{CptList}}" wx:key="idx" class="list">
+      <template is="lists" data="{{...item}}" />
+    </block>  
+  <!--For Loop List Template Ends-->
+</view>

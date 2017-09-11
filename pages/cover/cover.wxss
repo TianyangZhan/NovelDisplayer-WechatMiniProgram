@@ -1,0 +1,66 @@
+/**cover.wxss**/
+.btm{
+  float: right;
+  position: fixed;
+  top:30rpx;
+  right:30rpx;
+}
+.btmimg{
+  height:50rpx;
+  width:50rpx;
+}
+.pics{
+  display:inline-block;
+  margin: 0;
+  text-align: center;
+}
+.cover{
+  display:block;
+  height: 486px;
+  width: 243px;   /* set to 0 for full symble */
+}
+.pics2{
+  display:block;
+  margin: 0;
+  text-align: center;
+}
+.cover2{
+  height: 486px;
+  width: 320px;
+}
+.cover4{
+  display: block;
+  margin: 0;
+  height: 486px;
+  width: 409px;
+}
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 300%;
+  font-weight:900;
+  font-family:'Times New Roman';
+}
+.sb{
+  font-size:60%;
+}
+.intro {
+  text-align: center;
+  padding: 150rpx 0;
+  line-height: 1.5em;
+}
+.auth{
+  margin-top: 20rpx 0;
+  font-size: 80%;
+}
+.credit{
+  margin-top:20rpx;
+  font-size:110%;
+}
+.credit2{
+  font-size:110%;
+}

@@ -1,0 +1,24 @@
+<!--cover.wxml-->
+<view class="about">
+  <audio id="BGM" src="{{src}}" preload loop="loop"></audio>
+  <view class="btm" bindtap="audioPlay"><image src="{{btm}}" class="btmimg" background-size="contain"></image></view>
+  <view class="pics" wx:if="{{type=='img1'}}" bindtap="EventHandle">
+    <view wx:if="{{boolean==false}}"><image src="{{img1}}" class="cover" background-size="cover"></image></view>
+    <view wx:if="{{boolean==true}}"><image src="{{img4}}" class="cover4" background-size="contain"></image></view>
+  </view>  
+  <view class="pics2" wx:if="{{type=='img2'}}" bindtap="EventHandle">
+    <view wx:if="{{boolean==false}}"><image src="{{img2}}" class="cover2" background-size="cover"></image></view>
+    <view wx:elif="{{boolean==true}}"><image src="{{img3}}" class="cover2" background-size="cover"></image></view>
+  </view> 
+  <view bindtap="toggle"> 
+    <view class="title">
+      <view>{{title}}</view>
+      <view class="sb" style="color:darkred">{{subtitle}}</view>
+    </view>
+    <view class="intro">
+      <text class="auth">By {{author}} \n {{author2}}</text>
+      <view class="credit">{{credit1}}</view>
+      <view class="credit2">{{credit2}}</view>
+    </view>
+  </view>
+</view> 

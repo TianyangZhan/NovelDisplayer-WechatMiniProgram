@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/chapters/chapters",
+    "pages/detail/detail",
+    "pages/detail2/detail2",
+    "pages/detail3/detail3",
+    "pages/detail4/detail4",
+    "pages/detail5/detail5",
+    "pages/detail6/detail6",
+    "pages/detail7/detail7",
+    "pages/detail8/detail8",
+    "pages/epilogue/epilogue"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Batman: The Last Laugh",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "borderStyle": "white",
+    "selectedColor": "#cdcdcd",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/cover/cover",
+        "iconPath": "icons/activate2.png",
+        "selectedIconPath": "icons/2.png",
+        "text": "Cover"
+      },
+      {
+        "pagePath": "pages/chapters/chapters",
+        "iconPath": "icons/activate1.png",
+        "selectedIconPath": "icons/1.png",
+        "text": "Chapters"
+      }
+    ]
+  }
+}
